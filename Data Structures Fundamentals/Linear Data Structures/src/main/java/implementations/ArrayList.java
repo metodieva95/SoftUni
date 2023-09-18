@@ -135,7 +135,17 @@ public class ArrayList<E> implements List<E> {
     }
 
     private void shrink() {
-        this.elements = Arrays.copyOf(this.elements, this.capacity / 2);
+        this.capacity = this.capacity / 2;
+
+        Object[] tmp = new Object[this.capacity];
+
+        for (int i = 0; i < this.size; i++) {
+            tmp[i] = this.elements[i];
+        }
+
+        this.elements = tmp;
+
+//        this.elements = Arrays.copyOf(this.elements, this.capacity / 2);
     }
 
     private void validateIndex(int index) {
