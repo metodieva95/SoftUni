@@ -35,9 +35,7 @@ public class Stack<E> implements AbstractStack<E> {
 
     @Override
     public E pop() {
-        if(isEmpty()) {
-            throw new IllegalStateException("No such element");
-        }
+        ensureNonEmpty();
 
         Node<E> tmp = this.top;
         this.top = tmp.next;
@@ -49,9 +47,7 @@ public class Stack<E> implements AbstractStack<E> {
 
     @Override
     public E peek() {
-        if(isEmpty()) {
-            throw new IllegalStateException("No such element");
-        }
+        ensureNonEmpty();
 
         return this.top.value;
     }
@@ -85,5 +81,11 @@ public class Stack<E> implements AbstractStack<E> {
                 return value;
             }
         };
+    }
+
+    private void ensureNonEmpty() {
+        if(this.isEmpty()) {
+            throw new IllegalStateException("No such element");
+        }
     }
 }
