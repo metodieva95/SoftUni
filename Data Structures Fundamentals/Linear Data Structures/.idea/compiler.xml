@@ -7,7 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="LinearDS" />
+        <module name="LinearDS Lab" />
+        <module name="Linear Data Structures Exercise" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Data Structures Fundamentals" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
