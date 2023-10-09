@@ -6,8 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Linear Data Structures Exercise" />
         <module name="LinearDS" />
+        <module name="Linear Data Structures Exercise" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
