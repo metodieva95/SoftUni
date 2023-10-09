@@ -6,12 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="LinearDS" />
         <module name="Linear Data Structures Exercise" />
+        <module name="LinearDS" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Data Structures Fundamentals" target="17" />
+      <module name="Dec 2022" target="17" />
+      <module name="Exam Pred Dec 2022" target="17" />
+      <module name="Exam Preparation" target="11" />
+      <module name="Exam Preparation Dec" target="17" />
+      <module name="Exam Preparation Dec 2022" target="17" />
+      <module name="Exam Preparation December" target="17" />
+      <module name="March 2022" target="17" />
+      <module name="untitled" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>
