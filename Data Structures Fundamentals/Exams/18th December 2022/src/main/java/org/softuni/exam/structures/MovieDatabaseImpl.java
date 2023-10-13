@@ -33,12 +33,12 @@ public class MovieDatabaseImpl implements MovieDatabase {
 
     @Override
     public boolean contains(Actor actor) {
-        return actors.containsValue(actor);
+        return actors.containsKey(actor.getId());
     }
 
     @Override
     public boolean contains(Movie movie) {
-        return movies.containsValue(movie);
+        return movies.containsKey(movie.getId());
     }
 
     @Override
